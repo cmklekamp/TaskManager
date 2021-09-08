@@ -1,0 +1,11 @@
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\bin\Debug\net5.0\Library.TaskManager.deps.json
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\bin\Debug\net5.0\Library.TaskManager.dll
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\bin\Debug\net5.0\ref\Library.TaskManager.dll
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\bin\Debug\net5.0\Library.TaskManager.pdb
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.AssemblyInfoInputs.cache
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.AssemblyInfo.cs
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.csproj.CoreCompileInputs.cache
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.dll
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\ref\Library.TaskManager.dll
+C:\Users\Conno\Documents\FSU\Fall 2021\CEN4020\Assignments\Assignment 1\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.pdb
