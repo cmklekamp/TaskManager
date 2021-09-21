@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Conno\\Documents\\FSU\\Fall 2021\\CIS4930C#\\Assignments\\Assignment 1\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj": {}
+    "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Conno\\Documents\\FSU\\Fall 2021\\CIS4930C#\\Assignments\\Assignment 1\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj": {
+    "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Conno\\Documents\\FSU\\Fall 2021\\CIS4930C#\\Assignments\\Assignment 1\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj",
+        "projectUniqueName": "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj",
         "projectName": "Library.TaskManager",
-        "projectPath": "C:\\Users\\Conno\\Documents\\FSU\\Fall 2021\\CIS4930C#\\Assignments\\Assignment 1\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj",
+        "projectPath": "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManager\\Library.TaskManager\\Library.TaskManager.csproj",
         "packagesPath": "C:\\Users\\Conno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Conno\\Documents\\FSU\\Fall 2021\\CIS4930C#\\Assignments\\Assignment 1\\TaskManager\\Library.TaskManager\\obj\\",
+        "outputPath": "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManager\\Library.TaskManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
