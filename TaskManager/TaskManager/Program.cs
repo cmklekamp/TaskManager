@@ -14,7 +14,8 @@ namespace TaskManager {
 			// Loads the last save data or creates a new list if no save data found.
 			var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 			if (File.Exists($"{path}\\SaveData.json")) {
-				itemList = JsonConvert.DeserializeObject<List<Item>>(File.ReadAllText("SaveData.json"));
+				JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+				itemList = JsonConvert.DeserializeObject<List<Item>>(File.ReadAllText($"{path}\\SaveData.json"), settings);
 			} else {
 				itemList = new List<Item>();
 			}
