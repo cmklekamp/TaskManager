@@ -21,3 +21,14 @@ C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskMa
 C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskManager\Library.TaskManager\obj\Debug\net5.0\ref\Library.TaskManager.dll
 C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.pdb
 C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.csproj.AssemblyReference.cache
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\bin\Debug\net5.0\Library.TaskManager.deps.json
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\bin\Debug\net5.0\Library.TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\bin\Debug\net5.0\ref\Library.TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\bin\Debug\net5.0\Library.TaskManager.pdb
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.AssemblyInfoInputs.cache
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.AssemblyInfo.cs
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.csproj.CoreCompileInputs.cache
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\ref\Library.TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\Library.TaskManager\obj\Debug\net5.0\Library.TaskManager.pdb

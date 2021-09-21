@@ -214,6 +214,7 @@ namespace TaskManager {
 				(item as Appointment).Stop = apptStop;
 				Console.WriteLine("What are the names of the attendees?");
 				Console.WriteLine("Enter DONE to finish adding.");
+				(item as Appointment).Attendees.Clear();
 				bool isDone = false;
 				while (!isDone) {
 					string attendee = Console.ReadLine();

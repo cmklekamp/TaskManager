@@ -37,3 +37,23 @@ C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskMa
 C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.pdb
 C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.genruntimeconfig.cache
 C:\Users\Conno\Documents\FSU\Fall 2021\CIS4930C#\Assignments\Task Manager\TaskManager\TaskManager\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\TaskManager.exe
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\TaskManager.deps.json
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\TaskManager.runtimeconfig.json
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\TaskManager.runtimeconfig.dev.json
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\ref\TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\TaskManager.pdb
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\Library.TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\bin\Debug\net5.0\Library.TaskManager.pdb
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.csproj.AssemblyReference.cache
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.AssemblyInfoInputs.cache
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.AssemblyInfo.cs
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.csproj.CoreCompileInputs.cache
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.csproj.CopyComplete
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\ref\TaskManager.dll
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.pdb
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManager\TaskManager\obj\Debug\net5.0\TaskManager.genruntimeconfig.cache
