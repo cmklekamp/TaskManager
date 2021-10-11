@@ -41,6 +41,10 @@ namespace TaskManagerUWP
             (DataContext as MainViewModel).Remove();
 		}
 
+        private void Complete_Click(object sender, RoutedEventArgs e) {
+            (DataContext as MainViewModel).Complete();
+        }
+
         private void Search_Click(object sender, RoutedEventArgs e) {
             (DataContext as MainViewModel).Search();
 		}

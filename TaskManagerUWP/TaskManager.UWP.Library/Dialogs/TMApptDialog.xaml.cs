@@ -22,10 +22,10 @@ namespace TaskManagerUWP.Library.Dialogs {
 		private IList<TMItem> TMItems;
 		public TMApptDialog(IList<TMItem> TMItems) {
 			InitializeComponent();
-			DataContext = new TMItem();
+			DataContext = new TMAppointment();
 			this.TMItems = TMItems;
 		}
-		public TMApptDialog(IList<TMItem> TMItems, TMItem item) {
+		public TMApptDialog(IList<TMItem> TMItems, TMAppointment item) {
 			InitializeComponent();
 			DataContext = item;
 			this.TMItems = TMItems;

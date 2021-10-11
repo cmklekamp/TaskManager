@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5c1e5d5b-8a10-436b-9134-94bea310d4eb</PackageIdentityName>
     <PackageIdentityPublisher>CN=cmklekamp</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>73CC35E1FF098799D029B9314B795D0A414CD934043B5BD9A8596DBE9E6B4D4D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5c1e5d5b-8a10-436b-9134-94bea310d4eb_1.0.0.0_x86__kesec7sq57qgc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5c1e5d5b-8a10-436b-9134-94bea310d4eb_kesec7sq57qgc!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-10-09T20:30:05.092</Modified>
+      <Modified>2021-10-11T22:35:44.887</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\TaskManagerUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\TaskManagerUWP.exe">
       <PackagePath>entrypoint\TaskManagerUWP.exe</PackagePath>
-      <Modified>2021-10-09T20:30:04.389</Modified>
+      <Modified>2021-10-11T22:35:44.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -46,76 +46,76 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2021-02-05T05:15:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library.dll">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library.dll">
       <PackagePath>TaskManager.UWP.Library.dll</PackagePath>
-      <Modified>2021-10-09T20:28:27.186</Modified>
+      <Modified>2021-10-11T22:35:40.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T08:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\TaskManager.UWP.Library.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\TaskManager.UWP.Library.xr.xml">
       <PackagePath>TaskManager.UWP.Library\TaskManager.UWP.Library.xr.xml</PackagePath>
       <Modified>2021-10-09T19:03:56.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\Dialogs\TMApptDialog.xbf">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\Dialogs\TMApptDialog.xbf">
       <PackagePath>TaskManager.UWP.Library\Dialogs\TMApptDialog.xbf</PackagePath>
-      <Modified>2021-10-09T20:28:27.059</Modified>
+      <Modified>2021-10-11T22:35:40.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\Dialogs\TMPromptDialog.xbf">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\Dialogs\TMPromptDialog.xbf">
       <PackagePath>TaskManager.UWP.Library\Dialogs\TMPromptDialog.xbf</PackagePath>
-      <Modified>2021-10-09T20:28:27.060</Modified>
+      <Modified>2021-10-11T22:35:40.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\Dialogs\TMTaskDialog.xbf">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library\Dialogs\TMTaskDialog.xbf">
       <PackagePath>TaskManager.UWP.Library\Dialogs\TMTaskDialog.xbf</PackagePath>
-      <Modified>2021-10-09T20:28:27.060</Modified>
+      <Modified>2021-10-11T22:35:40.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-10-09T20:30:04.322</Modified>
+      <Modified>2021-10-11T22:35:44.456</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-10-09T20:30:04.322</Modified>
+      <Modified>2021-10-11T22:35:44.456</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\TaskManagerUWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\TaskManagerUWP.xr.xml">
       <PackagePath>TaskManagerUWP.xr.xml</PackagePath>
-      <Modified>2021-10-09T17:16:36.451</Modified>
+      <Modified>2021-10-11T22:16:51.495</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2021-10-05T20:15:40.388</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2021-10-05T19:51:16.173</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-10-05T19:51:16.176</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-10-05T19:51:16.177</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-10-05T19:51:16.178</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-10-05T19:51:16.179</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-10-05T19:51:16.179</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-10-05T19:51:16.180</Modified>
@@ -124,13 +124,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T06:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-10-09T20:28:31.572</Modified>
+      <Modified>2021-10-11T21:41:04.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Core\TaskManagerUWP.exe">
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Core\TaskManagerUWP.exe">
       <PackagePath>TaskManagerUWP.exe</PackagePath>
-      <Modified>2021-10-09T20:30:05.088</Modified>
+      <Modified>2021-10-11T22:35:44.884</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

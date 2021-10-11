@@ -8266,11 +8266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj",
+      "projectUniqueName": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj",
       "projectName": "TaskManager.UWP.Library",
-      "projectPath": "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj",
+      "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj",
       "packagesPath": "C:\\Users\\Conno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Conno\\source\\repos\\CSharp-Repository\\TaskManagerUWP\\TaskManager.UWP.Library\\obj\\",
+      "outputPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

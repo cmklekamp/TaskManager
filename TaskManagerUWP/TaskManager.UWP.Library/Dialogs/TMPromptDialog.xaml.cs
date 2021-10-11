@@ -27,12 +27,14 @@ namespace TaskManagerUWP.Library.Dialogs {
 
 		// Issue here with linking to the next dialog, I don't think the above is necessary and is actively screwing things up.
 		private async void ContentDialog_AddTask(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
+			sender.Hide();
 			var diag = new TMTaskDialog((DataContext as MainViewModel).TMItems);
 			await diag.ShowAsync();
 		}
 
 		// Issue here with linking to the next dialog, I don't think the above is necessary and is actively screwing things up.
 		private async void ContentDialog_AddAppt(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
+			sender.Hide();
 			var diag = new TMApptDialog((DataContext as MainViewModel).TMItems);
 			await diag.ShowAsync();
 		}
