@@ -1,0 +1,2 @@
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManager.UWP.Library\TaskManager.UWP.Library.csproj;x86
+C:\Users\Conno\source\repos\CSharp-Repository\TaskManagerUWP\TaskManagerUWP\TaskManager.UWP.csproj;x86

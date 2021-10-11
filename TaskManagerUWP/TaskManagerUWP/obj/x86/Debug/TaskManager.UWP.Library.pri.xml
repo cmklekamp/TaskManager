@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="TaskManager.UWP.Library" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="TaskManager.UWP.Library">
+				<NamedResource name="TaskManager.UWP.Library.xr.xml" uri="ms-resource://TaskManager.UWP.Library/Files/TaskManager.UWP.Library/TaskManager.UWP.Library.xr.xml">
+					<Candidate type="Path">
+						<Value>TaskManager.UWP.Library\TaskManager.UWP.Library.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Dialogs">
+					<NamedResource name="TMApptDialog.xbf" uri="ms-resource://TaskManager.UWP.Library/Files/TaskManager.UWP.Library/Dialogs/TMApptDialog.xbf">
+						<Candidate type="Path">
+							<Value>TaskManager.UWP.Library\Dialogs\TMApptDialog.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TMPromptDialog.xbf" uri="ms-resource://TaskManager.UWP.Library/Files/TaskManager.UWP.Library/Dialogs/TMPromptDialog.xbf">
+						<Candidate type="Path">
+							<Value>TaskManager.UWP.Library\Dialogs\TMPromptDialog.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TMTaskDialog.xbf" uri="ms-resource://TaskManager.UWP.Library/Files/TaskManager.UWP.Library/Dialogs/TMTaskDialog.xbf">
+						<Candidate type="Path">
+							<Value>TaskManager.UWP.Library\Dialogs\TMTaskDialog.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

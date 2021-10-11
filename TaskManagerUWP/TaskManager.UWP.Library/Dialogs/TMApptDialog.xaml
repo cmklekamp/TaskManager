@@ -1,0 +1,29 @@
+﻿<ContentDialog
+    x:Class="TaskManagerUWP.Library.Dialogs.TMApptDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TaskManagerUWP.Library.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Add Appointment:"
+    PrimaryButtonText="Submit"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Header="Name" Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <TextBox Grid.Row="1" Header="Description" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <DatePicker Grid.Row="2" Header="Start Time" SelectedDate="{Binding Path=Start, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>
+        <DatePicker Grid.Row="3" Header="Stop Time" SelectedDate="{Binding Path=Stop, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>
+        <TextBox Grid.Row="4" Header="Attendees (Comma Separated)" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Attendees, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+    </Grid>
+</ContentDialog>
