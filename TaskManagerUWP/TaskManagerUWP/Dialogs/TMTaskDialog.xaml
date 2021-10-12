@@ -8,9 +8,8 @@
     mc:Ignorable="d"
     Title="Add Task:"
     PrimaryButtonText="Submit"
-    SecondaryButtonText="Cancel"
-    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
-    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+    CloseButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick">
 
     <Grid>
         <Grid.RowDefinitions>

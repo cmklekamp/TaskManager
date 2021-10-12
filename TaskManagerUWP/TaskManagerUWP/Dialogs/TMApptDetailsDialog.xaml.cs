@@ -12,11 +12,5 @@ namespace TaskManagerUWP.Dialogs {
 			DataContext = item;
 			this.TMItems = TMItems;
 		}
-
-		private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
-		}
-
-		private void ContentDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
-		}
 	}
 }

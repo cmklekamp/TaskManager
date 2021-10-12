@@ -31,9 +31,5 @@ namespace TaskManagerUWP.Dialogs {
 				TMItems.Add(itemToEdit);
 			}
 		}
-
-		// This is just to exit the dialog without doing anything, remains empty.
-		private void ContentDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
-		}
 	}
 }

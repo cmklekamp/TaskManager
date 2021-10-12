@@ -76,11 +76,17 @@
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMApptDetailsDialog.xbf">
+      <PackagePath>Dialogs\TMApptDetailsDialog.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMApptDialog.xbf">
       <PackagePath>Dialogs\TMApptDialog.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMPromptDialog.xbf">
       <PackagePath>Dialogs\TMPromptDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMTaskDetailsDialog.xbf">
+      <PackagePath>Dialogs\TMTaskDetailsDialog.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMTaskDialog.xbf">
       <PackagePath>Dialogs\TMTaskDialog.xbf</PackagePath>
