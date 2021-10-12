@@ -56,15 +56,18 @@ namespace TaskManagerUWP.ViewModels {
 
 		// Edit function, skips the prompting dialog because it already knows what kind of item the selection is.
 		public async Task EditTicket() {
-			if (SelectedTMItem is TMTask) {
-				var diag = new TMTaskDialog(TMItems, SelectedTMItem as TMTask);
-				NotifyPropertyChanged("SelectedTMItem");
-				await diag.ShowAsync();
-			} else if (SelectedTMItem is TMAppointment) {
-				var diag = new TMApptDialog(TMItems, SelectedTMItem as TMAppointment);
-				NotifyPropertyChanged("SelectedTMItem");
-				await diag.ShowAsync();
-			}
+			//if (SelectedTMItem is TMTask) {
+			//	var diag = new TMTaskDialog(TMItems, SelectedTMItem as TMTask);
+			//	NotifyPropertyChanged("SelectedTMItem");
+			//	await diag.ShowAsync();
+			//} else if (SelectedTMItem is TMAppointment) {
+			//	var diag = new TMApptDialog(TMItems, SelectedTMItem as TMAppointment);
+			//	NotifyPropertyChanged("SelectedTMItem");
+			//	await diag.ShowAsync();
+			//}
+			var diag = new TMTaskDialog(TMItems, SelectedTMItem);
+			NotifyPropertyChanged("SelectedTMItem");
+			await diag.ShowAsync();
 		}
 
 		// Simply removes the item as long as it isn't already null (in which case exits without doing anything).

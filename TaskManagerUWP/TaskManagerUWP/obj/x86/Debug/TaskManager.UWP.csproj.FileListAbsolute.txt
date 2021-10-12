@@ -118,3 +118,4 @@ C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\De
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMApptDialog.xbf
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMPromptDialog.xbf
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMTaskDialog.xbf
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\TaskManager.UWP.csproj.CopyComplete

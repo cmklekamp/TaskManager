@@ -23,5 +23,10 @@ namespace TaskManagerUWP.Library.Models {
 		public void setCompletedNum() {
 			completedNum++;
 		}
+
+		// Temp. ver. for testing purposes.
+		public override string ToString() {
+			return $"[ITEM] {Name} - {Description}";
+		}
 	}
 }
