@@ -16,9 +16,8 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="5*"/>
-            <!--Return these to normal once simplified app works-->
             <!--<RowDefinition Height="5*"/>-->
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <ComboBox Grid.Row="0" Header="Priority" PlaceholderText="1-3" Width="100" SelectedItem="{Binding Path=Priority, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <x:String>1</x:String>
@@ -27,10 +26,10 @@
         </ComboBox>
         <TextBox Grid.Row="1" Header="Name" Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <TextBox Grid.Row="2" Header="Description" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <!--<DatePicker Grid.Row="3" Header="Deadline" SelectedDate="{Binding Path=Deadline, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>-->
         <ComboBox Grid.Row="3" Header="Completion Status" PlaceholderText="Complete/Incomplete" Width="200" SelectedItem="{Binding Path=IsCompletedString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <x:String>Complete</x:String>
             <x:String>Incomplete</x:String>
         </ComboBox>
-        <!--<DatePicker Grid.Row="2" Header="Deadline" SelectedDate="{Binding Path=Deadline, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>-->
     </Grid>
 </ContentDialog>

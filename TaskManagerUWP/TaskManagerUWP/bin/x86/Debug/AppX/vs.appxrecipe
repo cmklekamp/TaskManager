@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-10-12T19:26:25.236</Modified>
+      <Modified>2021-10-12T20:27:07.898</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\TaskManagerUWP.exe">
       <PackagePath>entrypoint\TaskManagerUWP.exe</PackagePath>
-      <Modified>2021-10-12T19:26:24.739</Modified>
+      <Modified>2021-10-12T20:27:07.523</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -48,7 +48,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManager.UWP.Library\bin\x86\Debug\TaskManager.UWP.Library.dll">
       <PackagePath>TaskManager.UWP.Library.dll</PackagePath>
-      <Modified>2021-10-12T19:26:19.453</Modified>
+      <Modified>2021-10-12T20:27:02.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -94,35 +94,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\TaskManagerUWP.xr.xml">
       <PackagePath>TaskManagerUWP.xr.xml</PackagePath>
-      <Modified>2021-10-12T19:23:02.932</Modified>
+      <Modified>2021-10-12T20:12:46.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.656</Modified>
+      <Modified>2021-10-12T20:27:07.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMApptDetailsDialog.xbf">
       <PackagePath>Dialogs\TMApptDetailsDialog.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.656</Modified>
+      <Modified>2021-10-12T20:27:07.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMApptDialog.xbf">
       <PackagePath>Dialogs\TMApptDialog.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.656</Modified>
+      <Modified>2021-10-12T20:27:07.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMPromptDialog.xbf">
       <PackagePath>Dialogs\TMPromptDialog.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.656</Modified>
+      <Modified>2021-10-12T20:27:07.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMTaskDetailsDialog.xbf">
       <PackagePath>Dialogs\TMTaskDetailsDialog.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.657</Modified>
+      <Modified>2021-10-12T20:27:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\TMTaskDialog.xbf">
       <PackagePath>Dialogs\TMTaskDialog.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.657</Modified>
+      <Modified>2021-10-12T20:27:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-10-12T19:26:24.657</Modified>
+      <Modified>2021-10-12T20:27:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -134,7 +134,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Core\TaskManagerUWP.exe">
       <PackagePath>TaskManagerUWP.exe</PackagePath>
-      <Modified>2021-10-12T19:26:25.232</Modified>
+      <Modified>2021-10-12T20:27:07.894</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
