@@ -54,20 +54,24 @@ namespace TaskManagerUWP.ViewModels {
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 
+		// Add function, calls the "task or appointment" prompt and passes in the list to pass on.
+		public async Task AddTicket() {
+			var diag = new TMPromptDialog(TMItems);
+			await diag.ShowAsync();
+		}
+
 		// Edit function, skips the prompting dialog because it already knows what kind of item the selection is.
 		public async Task EditTicket() {
-			//if (SelectedTMItem is TMTask) {
-			//	var diag = new TMTaskDialog(TMItems, SelectedTMItem as TMTask);
-			//	NotifyPropertyChanged("SelectedTMItem");
-			//	await diag.ShowAsync();
-			//} else if (SelectedTMItem is TMAppointment) {
-			//	var diag = new TMApptDialog(TMItems, SelectedTMItem as TMAppointment);
-			//	NotifyPropertyChanged("SelectedTMItem");
-			//	await diag.ShowAsync();
-			//}
-			var diag = new TMTaskDialog(TMItems, SelectedTMItem);
-			NotifyPropertyChanged("SelectedTMItem");
-			await diag.ShowAsync();
+			if (SelectedTMItem is TMTask) {
+				var diag = new TMTaskDialog(TMItems, SelectedTMItem as TMTask);
+				NotifyPropertyChanged("SelectedTMItem");
+				await diag.ShowAsync();
+			}
+			else if (SelectedTMItem is TMAppointment) {
+				var diag = new TMApptDialog(TMItems, SelectedTMItem as TMAppointment);
+				NotifyPropertyChanged("SelectedTMItem");
+				await diag.ShowAsync();
+			}
 		}
 
 		// Simply removes the item as long as it isn't already null (in which case exits without doing anything).

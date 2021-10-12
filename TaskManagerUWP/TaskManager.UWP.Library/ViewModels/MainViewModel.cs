@@ -14,12 +14,6 @@ namespace TaskManagerUWP.Library.ViewModels {
 			TMItems = new List<TMItem>();
 		}
 
-		public void AddTMItem() {
-			if (SelectedTMItem == null) {
-				TMItems.Add(new TMItem());
-			}
-		}
-
 		public void DeleteTMItem() {
 			if(SelectedTMItem != null) {
 				TMItems.Remove(SelectedTMItem);

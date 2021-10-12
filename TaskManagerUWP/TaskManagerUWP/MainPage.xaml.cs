@@ -29,9 +29,7 @@ namespace TaskManagerUWP
         }
 
         private async void AddNew_Click(object sender, RoutedEventArgs e) {
-            //var diag = new TMPromptDialog();
-            var diag = new TMTaskDialog((DataContext as MainViewModel).TMItems);
-            await diag.ShowAsync();
+            await (DataContext as MainViewModel).AddTicket();
         }
 
         private async void Edit_Click(object sender, RoutedEventArgs e) {

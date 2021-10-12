@@ -10,12 +10,10 @@ namespace TaskManagerUWP.Dialogs {
 		private IList<TMItem> TMItems;
 		public TMTaskDialog(IList<TMItem> TMItems) {
 			InitializeComponent();
-			//DataContext = new TMTask();
-			DataContext = new TMItem();
+			DataContext = new TMTask();
 			this.TMItems = TMItems;
 		}
-		//public TMTaskDialog(IList<TMItem> TMItems, TMTask item) {
-		public TMTaskDialog(IList<TMItem> TMItems, TMItem item) {
+		public TMTaskDialog(IList<TMItem> TMItems, TMTask item) {
 			InitializeComponent();
 			DataContext = item;
 			this.TMItems = TMItems;
@@ -23,8 +21,7 @@ namespace TaskManagerUWP.Dialogs {
 
 		// Adds the task (or, if it already exists, edits it by removing the original and adding the new one in its spot).
 		private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
-			//var itemToEdit = DataContext as TMTask;
-			var itemToEdit = DataContext as TMItem;
+			var itemToEdit = DataContext as TMTask;
 			var i = TMItems.IndexOf(itemToEdit);
 			if (i >= 0) {
 				TMItems.Remove(itemToEdit);
