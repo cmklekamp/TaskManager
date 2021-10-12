@@ -1,5 +1,5 @@
-﻿using TaskManagerUWP.Library.Dialogs;
-using TaskManagerUWP.Library.ViewModels;
+﻿using TaskManagerUWP.Dialogs;
+using TaskManagerUWP.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -46,7 +46,7 @@ namespace TaskManagerUWP
         }
 
         private void Search_Click(object sender, RoutedEventArgs e) {
-            (DataContext as MainViewModel).Search();
+            (DataContext as MainViewModel).RefreshList();
 		}
     }
 }

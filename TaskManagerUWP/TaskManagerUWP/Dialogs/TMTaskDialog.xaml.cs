@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Navigation;
 // The Content Dialog item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 // Is either navigated to from the prompt dialog, or straight to when editing. Adds/edits a task item.
 
-namespace TaskManagerUWP.Library.Dialogs {
+namespace TaskManagerUWP.Dialogs {
 	public sealed partial class TMTaskDialog : ContentDialog {
 		private IList<TMItem> TMItems;
 		public TMTaskDialog(IList<TMItem> TMItems) {

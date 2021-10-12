@@ -1,5 +1,5 @@
 ﻿using TaskManagerUWP.Library.Models;
-using TaskManagerUWP.Library.ViewModels;
+using TaskManagerUWP.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 // The Content Dialog item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 // Reads in which kind of item the user wants to make and opens the appropriate next dialog to add the item.
 
-namespace TaskManagerUWP.Library.Dialogs {
+namespace TaskManagerUWP.Dialogs {
 	public sealed partial class TMPromptDialog : ContentDialog {
 		public TMPromptDialog() {
 			InitializeComponent();

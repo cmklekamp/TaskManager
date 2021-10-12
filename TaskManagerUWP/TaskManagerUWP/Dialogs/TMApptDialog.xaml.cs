@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Navigation;
 // The Content Dialog item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 // Is either navigated to from the prompt dialog, or straight to when editing. Adds/edits an appointment item.
 
-namespace TaskManagerUWP.Library.Dialogs {
+namespace TaskManagerUWP.Dialogs {
 	public sealed partial class TMApptDialog : ContentDialog {
 		private IList<TMItem> TMItems;
 		public TMApptDialog(IList<TMItem> TMItems) {

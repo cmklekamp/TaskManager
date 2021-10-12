@@ -2,11 +2,8 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Attendees" />
-    <RootPropertyPathName Name="Stop" />
-    <RootPropertyPathName Name="Start" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="Deadline" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
@@ -32,10 +29,6 @@
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="AcceptsReturn" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
-      <RootProperty Name="Header" />
-      <RootProperty Name="SelectedDate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />

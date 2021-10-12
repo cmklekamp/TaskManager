@@ -120,15 +120,6 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Dialogs\TMApptDialog.xaml.cs">
-      <DependentUpon>TMApptDialog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Dialogs\TMPromptDialog.xaml.cs">
-      <DependentUpon>TMPromptDialog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Dialogs\TMTaskDialog.xaml.cs">
-      <DependentUpon>TMTaskDialog.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\TMAppointment.cs" />
     <Compile Include="Models\TMItem.cs" />
     <Compile Include="Models\TMTask.cs" />
@@ -143,20 +134,6 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Dialogs\TMApptDialog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Dialogs\TMPromptDialog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Dialogs\TMTaskDialog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

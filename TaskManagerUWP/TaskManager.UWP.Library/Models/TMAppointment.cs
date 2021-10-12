@@ -12,9 +12,14 @@ namespace TaskManagerUWP.Library.Models {
 		// List of strings that stores the attendees of the appointment.
 		public string Attendees { set; get; }
 		// Overrides ToString to make listing easier.
+		//public override string ToString() {
+		//	return $"{ID}. [APPT] {Name} - {Description} ({Start.ToString()} - {Stop.ToString()}) [{IsCompletedString}]" +
+		//		$"\n\tAttendees: {Attendees}";
+		//}
+
+		// Simplified ver. for testing purposes.
 		public override string ToString() {
-			return $"{ID}. [APPT] {Name} - {Description} ({Start.ToString()} - {Stop.ToString()}) [{IsCompletedString}]" +
-				$"\n\tAttendees: {Attendees}";
+			return $"[APPT] {Name} - {Description}";
 		}
 	}
 }
