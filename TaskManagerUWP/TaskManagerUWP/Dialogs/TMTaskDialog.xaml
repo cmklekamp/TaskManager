@@ -16,6 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
+            <!--Return these to normal once simplified app works-->
             <!--<RowDefinition Height="5*"/>-->
         </Grid.RowDefinitions>
         <TextBox Grid.Row="0" Header="Name" Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
