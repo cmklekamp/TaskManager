@@ -82,13 +82,18 @@ namespace TaskManagerUWP.ViewModels {
 			TMItems.Remove(SelectedTMItem);
 		}
 
-		// Marks the selected item as completed as long as it is not null.
-		public void Complete() {
-			if (SelectedTMItem == null) {
-				return;
+		// Calls a dialogue that shows the details of the item.
+		public async Task Details() {
+			if (SelectedTMItem is TMTask) {
+				var diag = new TMTaskDetailsDialog(TMItems, SelectedTMItem as TMTask);
+				NotifyPropertyChanged("SelectedTMItem");
+				await diag.ShowAsync();
 			}
-			SelectedTMItem.IsCompleted = true;
-			SelectedTMItem.IsCompletedString = "COMPLETE";
+			else if (SelectedTMItem is TMAppointment) {
+				var diag = new TMApptDetailsDialog(TMItems, SelectedTMItem as TMAppointment);
+				NotifyPropertyChanged("SelectedTMItem");
+				await diag.ShowAsync();
+			}
 		}
 
 		// Refresh list.

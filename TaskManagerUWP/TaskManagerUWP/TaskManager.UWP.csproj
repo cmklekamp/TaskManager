@@ -119,11 +119,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\TMApptDetailsDialog.xaml.cs">
+      <DependentUpon>TMApptDetailsDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\TMApptDialog.xaml.cs">
       <DependentUpon>TMApptDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dialogs\TMPromptDialog.xaml.cs">
       <DependentUpon>TMPromptDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\TMTaskDetailsDialog.xaml.cs">
+      <DependentUpon>TMTaskDetailsDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dialogs\TMTaskDialog.xaml.cs">
       <DependentUpon>TMTaskDialog.xaml</DependentUpon>
@@ -154,6 +160,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Dialogs\TMApptDetailsDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dialogs\TMApptDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -161,6 +171,10 @@
     <Page Include="Dialogs\TMPromptDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\TMTaskDetailsDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Dialogs\TMTaskDialog.xaml">
       <Generator>MSBuild:Compile</Generator>

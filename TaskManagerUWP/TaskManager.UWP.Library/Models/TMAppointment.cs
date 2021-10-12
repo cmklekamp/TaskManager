@@ -19,7 +19,7 @@ namespace TaskManagerUWP.Library.Models {
 
 		// Simplified ver. for testing purposes.
 		public override string ToString() {
-			return $"[APPT] {Name} - {Description}";
+			return $"{PriorityString}[{IsCompletedString}][APPT] {Name} - {Description}";
 		}
 	}
 }

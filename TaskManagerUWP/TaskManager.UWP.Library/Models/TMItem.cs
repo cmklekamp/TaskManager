@@ -17,10 +17,18 @@ namespace TaskManagerUWP.Library.Models {
 		//public int ID { set; get; }
 		// Stores priority (1 - 3) and the string ver. ([!  ] to [!!!])
 		public int Priority { set; get; }
-		public string PriorityString { set; get; }
+		public string PriorityString { get {
+				if(Priority == 1) {
+					return "[!]  ";
+				} else if(Priority == 2) {
+					return "[!!] ";
+				} else {
+					return "[!!!]";
+				}
+			}
+		}
 		public string Name { get; set; }
 		public string Description { get; set; }
-		public bool IsCompleted { get; set; }
 		public string IsCompletedString { get; set; }
 		// Int that stores the number of completed items for the outstanding items list (no longer needed)
 		//public static int completedNum = 0;
