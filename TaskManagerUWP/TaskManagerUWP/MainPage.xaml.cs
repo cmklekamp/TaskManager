@@ -40,12 +40,16 @@ namespace TaskManagerUWP
             (DataContext as MainViewModel).Remove();
 		}
 
-        private void Details_Click(object sender, RoutedEventArgs e) {
-            (DataContext as MainViewModel).Details();
+        private async void Details_Click(object sender, RoutedEventArgs e) {
+            await (DataContext as MainViewModel).Details();
         }
 
         private void Search_Click(object sender, RoutedEventArgs e) {
             (DataContext as MainViewModel).RefreshList();
 		}
+
+        private void Sort_Click(object sender, RoutedEventArgs e) {
+            (DataContext as MainViewModel).RefreshList();
+        }
     }
 }

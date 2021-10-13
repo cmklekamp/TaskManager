@@ -6,9 +6,9 @@
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="Priority" />
-    <RootPropertyPathName Name="Deadline" />
     <RootPropertyPathName Name="FilteredTMItems" />
     <RootPropertyPathName Name="SelectedTMItem" />
+    <RootPropertyPathName Name="SortType" />
     <RootPropertyPathName Name="Query" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -42,6 +42,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="Items" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Header" />
@@ -62,10 +63,6 @@
     </RootType>
     <RootType FullName="TaskManagerUWP.Dialogs.TMPromptDialog" />
     <RootType FullName="TaskManagerUWP.Dialogs.TMTaskDetailsDialog" />
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
-      <RootProperty Name="Header" />
-      <RootProperty Name="SelectedDate" />
-    </RootType>
     <RootType FullName="TaskManagerUWP.Dialogs.TMTaskDialog" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />

@@ -16,10 +16,21 @@ namespace TaskManagerUWP.ViewModels {
 		public TMItem SelectedTMItem { get; set; }
 		public ObservableCollection<TMItem> TMItems { get; set; }
 		private ObservableCollection<TMItem> filteredTMItems;
-		// In-class example that allows the search function to work by returning the filtered items when searching and all otherwise.
+		// In-class example that allows the search function to work by returning the filtered items when searching.
+		// If not searching, also checks if the sort type is default, and otherwise returns the other type of sort.
 		public ObservableCollection<TMItem> FilteredTMItems { get {
 				if(string.IsNullOrWhiteSpace(Query)) {
-					return TMItems;
+					if (SortType == "Only Incomplete") {
+						filteredTMItems = new ObservableCollection<TMItem>(TMItems
+							.Where(s => s.IsCompletedString.Contains("Incomplete")));
+						return filteredTMItems;
+					} else if (SortType == "By Priority") {
+						filteredTMItems = new ObservableCollection<TMItem>(TMItems
+							.OrderByDescending(s => s.Priority).ToList());
+						return filteredTMItems;
+					} else {
+						return TMItems;
+					}
 				} else {
 					filteredTMItems = new ObservableCollection<TMItem>(TMItems
 						.Where(s => s.Name.ToUpper().Contains(Query.ToUpper())
@@ -30,7 +41,10 @@ namespace TaskManagerUWP.ViewModels {
 				}
 			}
 		}
+		// String responsible for filtering the search.
 		public string Query { get; set; }
+		// String responsible for filtering based on the sort ComboBox.
+		public string SortType { get; set; }
 
 		// These must be for saving eventually.
 		private string persistencePath;

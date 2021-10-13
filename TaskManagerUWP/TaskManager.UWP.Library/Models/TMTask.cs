@@ -7,7 +7,7 @@ namespace TaskManagerUWP.Library.Models {
 
 		// ToString override that formats the items being printed to the screen.
 		public override string ToString() {
-			return $"{PriorityString}[{IsCompletedString}][TASK] {Name} - {Description}";
+			return $"{PriorityString}[{IsCompletedString}][Task] {Name} - {Description}";
 		}
 	}
 }

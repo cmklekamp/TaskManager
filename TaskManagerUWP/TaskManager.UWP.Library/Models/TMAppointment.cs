@@ -9,12 +9,11 @@ namespace TaskManagerUWP.Library.Models {
 		// Unique variables that store the appointment start and end times.
 		public DateTime Start { set; get; }
 		public DateTime Stop { set; get; }
-		// List of strings that stores the attendees of the appointment.
+		// Input string that stores the attendees of the appointment.
 		public string Attendees { set; get; }
-
 		// ToString override that formats the items being printed to the screen.
 		public override string ToString() {
-			return $"{PriorityString}[{IsCompletedString}][APPT] {Name} - {Description}"
+			return $"{PriorityString}[{IsCompletedString}][Appt] {Name} - {Description}"
 				+ $"\n\tAttendees: {Attendees}";
 		}
 	}

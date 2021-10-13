@@ -16,11 +16,19 @@
         <StackPanel>
             <Grid HorizontalAlignment="Stretch">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBox HorizontalAlignment="Stretch" Grid.Column="0" Text="{Binding Query, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Button HorizontalAlignment="Stretch" Grid.Column="1" Content="Search" Click="Search_Click"></Button>
+                <ComboBox HorizontalAlignment="Stretch" Grid.Column="2" PlaceholderText="Sorting Type" SelectedItem="{Binding SortType, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <x:String>Default</x:String>
+                    <x:String>By Priority</x:String>
+                    <x:String>Only Incomplete</x:String>
+                </ComboBox>
+                <Button HorizontalAlignment="Stretch" Grid.Column="3" Content="Sort" Click="Sort_Click"></Button>
             </Grid>
             <ListBox Grid.Row="0" ItemsSource="{Binding Path=FilteredTMItems, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding Path=SelectedTMItem, Mode=TwoWay}"></ListBox>
         </StackPanel>

@@ -30,13 +30,6 @@ namespace TaskManagerUWP.Library.Models {
 		public string Name { get; set; }
 		public string Description { get; set; }
 		public string IsCompletedString { get; set; }
-		// Int that stores the number of completed items for the outstanding items list (no longer needed)
-		//public static int completedNum = 0;
-		//public void setCompletedNum() {
-		//	completedNum++;
-		//}
-
-		// Temp. ver. for testing purposes.
 		public override string ToString() {
 			return $"[ITEM] {Name} - {Description}";
 		}
