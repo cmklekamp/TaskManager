@@ -1,4 +1,4 @@
-﻿<ContentDialog
+﻿<ContentDialog Background="#86A99D"
     x:Class="TaskManagerUWP.Dialogs.TMApptDialog"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -10,6 +10,15 @@
     PrimaryButtonText="Submit"
     CloseButtonText="Cancel"
     PrimaryButtonClick="ContentDialog_PrimaryButtonClick">
+
+    <ContentDialog.Resources>
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>
+    </ContentDialog.Resources>
 
     <Grid>
         <Grid.RowDefinitions>

@@ -14,10 +14,12 @@
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
+      <RootProperty Name="Background" />
       <RootProperty Name="Title" />
       <RootProperty Name="CloseButtonText" />
       <RootProperty Name="Content" />
       <RootProperty Name="PrimaryButtonText" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="SecondaryButtonText" />
       <RootEvent Name="PrimaryButtonClick" />
       <RootEvent Name="SecondaryButtonClick" />
@@ -25,6 +27,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetRow" />
@@ -33,9 +36,6 @@
       <RootMethod Name="SetColumn" />
     </RootType>
     <RootType FullName="TaskManagerUWP.Dialogs.TMApptDetailsDialog" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Header" />
       <RootProperty Name="PlaceholderText" />
@@ -44,12 +44,23 @@
       <RootProperty Name="Items" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Padding" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Header" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="AcceptsReturn" />
       <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
@@ -66,15 +77,10 @@
     <RootType FullName="TaskManagerUWP.Dialogs.TMTaskDialog" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
@@ -85,6 +91,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="TaskManagerUWP.MainPage" />
   </Roots.RootTypes>
