@@ -1,6 +1,8 @@
-﻿using TaskManagerUWP.Library.Models;
+﻿using System;
+using TaskManagerUWP.Library.Models;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+
 
 // The Content Dialog item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 // Is either navigated to from the prompt dialog, or straight to when editing. Adds/edits a task item.

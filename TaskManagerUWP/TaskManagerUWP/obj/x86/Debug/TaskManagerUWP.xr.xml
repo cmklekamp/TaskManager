@@ -1,12 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Stop" />
+    <RootPropertyPathName Name="Start" />
     <RootPropertyPathName Name="Attendees" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="IsCompletedString" />
     <RootPropertyPathName Name="PriorityString" />
+    <RootPropertyPathName Name="BoundDateStop" />
+    <RootPropertyPathName Name="BoundDateStart" />
     <RootPropertyPathName Name="Priority" />
+    <RootPropertyPathName Name="Deadline" />
+    <RootPropertyPathName Name="BoundDate" />
     <RootPropertyPathName Name="FilteredTMItems" />
     <RootPropertyPathName Name="SelectedTMItem" />
     <RootPropertyPathName Name="SortType" />
@@ -66,6 +72,10 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="AcceptsReturn" />
       <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="Header" />
+      <RootProperty Name="SelectedDate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />

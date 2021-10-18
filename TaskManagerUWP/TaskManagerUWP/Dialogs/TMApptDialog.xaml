@@ -18,6 +18,9 @@
         <Style TargetType="TextBox">
             <Setter Property="Background" Value="#F5F4EA"/>
         </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>
     </ContentDialog.Resources>
 
     <Grid>
@@ -25,8 +28,8 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
-            <!--<RowDefinition Height="5*"/>
-            <RowDefinition Height="5*"/>-->
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
@@ -37,10 +40,10 @@
         </ComboBox>
         <TextBox Grid.Row="1" Header="Name" Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <TextBox Grid.Row="2" Header="Description" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <!--<DatePicker Grid.Row="2" Header="Start Time" SelectedDate="{Binding Path=Start, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>
-        <DatePicker Grid.Row="3" Header="Stop Time" SelectedDate="{Binding Path=Stop, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>-->
-        <TextBox Grid.Row="3" Header="Attendees (Comma Separated)" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Attendees, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <ComboBox Grid.Row="4" Header="Completion Status" PlaceholderText="Complete/Incomplete" Width="200" SelectedItem="{Binding Path=IsCompletedString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <DatePicker Grid.Row="3" Header="Start Time" SelectedDate="{Binding Path=BoundDateStart, Mode=TwoWay}"></DatePicker>
+        <DatePicker Grid.Row="4" Header="Stop Time" SelectedDate="{Binding Path=BoundDateStop, Mode=TwoWay}"></DatePicker>
+        <TextBox Grid.Row="5" Header="Attendees (Comma Separated)" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Attendees, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <ComboBox Grid.Row="6" Header="Completion Status" PlaceholderText="Complete/Incomplete" Width="200" SelectedItem="{Binding Path=IsCompletedString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <x:String>Complete</x:String>
             <x:String>Incomplete</x:String>
         </ComboBox>
