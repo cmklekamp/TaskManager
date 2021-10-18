@@ -18,10 +18,17 @@
         <Style TargetType="TextBox">
             <Setter Property="Background" Value="#F5F4EA"/>
         </Style>
+        <!--<Style TargetType="DatePicker">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>-->
+        <!--<Style TargetType="TimePicker">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>-->
     </ContentDialog.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
@@ -35,7 +42,8 @@
         </ComboBox>
         <TextBox Grid.Row="1" Header="Name" Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <TextBox Grid.Row="2" Header="Description" TextWrapping="Wrap" AcceptsReturn="True" Text="{Binding Path=Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-        <!--<DatePicker Grid.Row="3" Header="Deadline" SelectedDate="{Binding Path=Deadline, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>-->
+        <!--<DatePicker Grid.Row="3" Header="Deadline Date" SelectedDateChanged="{Binding Path=Deadline, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></DatePicker>-->
+        <!--<TimePicker Grid.Row="4" Header="Deadline Time" MinuteIncrement="15" SelectedTimeChanged="{Binding Path=Deadline, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>-->
         <ComboBox Grid.Row="3" Header="Completion Status" PlaceholderText="Complete/Incomplete" Width="200" SelectedItem="{Binding Path=IsCompletedString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <x:String>Complete</x:String>
             <x:String>Incomplete</x:String>

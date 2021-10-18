@@ -10,5 +10,17 @@
     CloseButtonText="Done">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="{Binding PriorityString}"></TextBlock>
+        <TextBlock Grid.Row="1" Text="{Binding IsCompletedString}"></TextBlock>
+        <TextBlock Grid.Row="2" Text="{Binding Name}"></TextBlock>
+        <TextBlock Grid.Row="3" Text="{Binding Description}"></TextBlock>
+        <TextBlock Grid.Row="4" Text="DEADLINE"></TextBlock>
     </Grid>
 </ContentDialog>

@@ -128,3 +128,4 @@ C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\De
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\TMTaskDetailsDialog.xaml
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\TMApptDetailsDialog.xbf
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\TMTaskDetailsDialog.xbf
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\TaskManager.UWP.csproj.CopyComplete

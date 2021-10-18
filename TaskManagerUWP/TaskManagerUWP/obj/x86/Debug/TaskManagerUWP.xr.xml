@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="IsCompletedString" />
     <RootPropertyPathName Name="Attendees" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="IsCompletedString" />
+    <RootPropertyPathName Name="PriorityString" />
     <RootPropertyPathName Name="Priority" />
     <RootPropertyPathName Name="FilteredTMItems" />
     <RootPropertyPathName Name="SelectedTMItem" />
@@ -35,6 +36,17 @@
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+    </RootType>
     <RootType FullName="TaskManagerUWP.Dialogs.TMApptDetailsDialog" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Header" />
@@ -59,19 +71,8 @@
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
-      <RootProperty Name="UpdateSourceTrigger" />
-    </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="TaskManagerUWP.Dialogs.TMApptDialog" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-    </RootType>
     <RootType FullName="TaskManagerUWP.Dialogs.TMPromptDialog" />
     <RootType FullName="TaskManagerUWP.Dialogs.TMTaskDetailsDialog" />
     <RootType FullName="TaskManagerUWP.Dialogs.TMTaskDialog" />
