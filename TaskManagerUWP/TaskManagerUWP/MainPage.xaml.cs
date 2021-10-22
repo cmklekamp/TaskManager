@@ -51,5 +51,17 @@ namespace TaskManagerUWP
         private void Sort_Click(object sender, RoutedEventArgs e) {
             (DataContext as MainViewModel).RefreshList();
         }
-    }
+
+        private void SaveLoad_Click(object sender, RoutedEventArgs e) {
+            (DataContext as MainViewModel).SaveLoad();
+        }
+
+		private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {
+
+		}
+
+		private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+
+		}
+	}
 }

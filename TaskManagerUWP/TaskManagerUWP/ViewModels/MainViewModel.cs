@@ -114,5 +114,11 @@ namespace TaskManagerUWP.ViewModels {
 		public void RefreshList() {
 			NotifyPropertyChanged("FilteredTMItems");
 		}
+
+		// Save or load to file.
+		public async void SaveLoad() {
+			var diag = new SaveLoadDialog(TMItems);
+			await diag.ShowAsync();
+		}
 	}
 }

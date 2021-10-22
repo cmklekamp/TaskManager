@@ -1,0 +1,25 @@
+﻿<ContentDialog Background="#86A99D"
+    x:Class="TaskManagerUWP.Dialogs.SaveLoadDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TaskManagerUWP.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Save/Load to File"
+    PrimaryButtonText="Save"
+    SecondaryButtonText="Load"
+    CloseButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_SaveClick"
+    SecondaryButtonClick="ContentDialog_LoadClick">
+
+    <ContentDialog.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>
+    </ContentDialog.Resources>
+    
+    <Grid>
+        <TextBox Header="Enter File Name:" Text="{Binding Filename, Mode=TwoWay}"></TextBox>
+    </Grid>
+</ContentDialog>

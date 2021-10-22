@@ -128,3 +128,8 @@ C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\De
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\TMTaskDetailsDialog.xaml
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\TMApptDetailsDialog.xbf
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\TMTaskDetailsDialog.xbf
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Dialogs\SaveLoadDialog.xbf
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\SaveLoadDialog.g.i.cs
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\SaveLoadDialog.g.cs
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\SaveLoadDialog.xaml
+C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Dialogs\SaveLoadDialog.xbf

@@ -21,6 +21,9 @@
         <Style TargetType="DatePicker">
             <Setter Property="Background" Value="#F5F4EA"/>
         </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#F5F4EA"/>
+        </Style>
     </ContentDialog.Resources>
 
     <Grid>
