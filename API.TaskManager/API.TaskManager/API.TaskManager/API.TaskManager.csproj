@@ -8,4 +8,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Library.TaskManager">
+      <HintPath>..\..\..\TaskManagerUWP\Library.TaskManager\bin\x86\Debug\Library.TaskManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

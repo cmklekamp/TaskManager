@@ -9,21 +9,21 @@ using System.Linq;
 namespace API.TaskManager.Controllers {
 	[ApiController]
 	[Route("[controller")]
-	public class TaskController : ControllerBase {
-		private readonly ILogger<TaskController> _logger;
+	public class TMTaskController : ControllerBase {
+		private readonly ILogger<TMTaskController> _logger;
 
 		[HttpGet]
-		public IEnumerable<Task> Get() {
-			return Database.Tasks;
+		public IEnumerable<TMTask> Get() {
+			return Database.TMTasks;
 		}
 
 		[HttpGet("GetItem")]
-		public Item GetTestItem() {
-			return new Task();
+		public TMItem GetTestItem() {
+			return new TMTask();
 		}
 
 		[HttpPost("AddOrUpdate")]
-		public Item Recieve([FromBody] Task task) {
+		public TMItem Recieve([FromBody] TMTask task) {
 			return task;
 		}
 	}
