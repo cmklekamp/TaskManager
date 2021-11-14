@@ -320,7 +320,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -828,7 +829,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -1337,7 +1339,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -1846,7 +1849,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -2354,7 +2358,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -2863,7 +2868,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -3371,7 +3377,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -3880,7 +3887,8 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Library.TaskManager.dll": {}
@@ -8356,8 +8364,8 @@
     },
     "Library.TaskManager/1.0.0": {
       "type": "project",
-      "path": "../Library.TaskManagerApplication/Library.TaskManager.csproj",
-      "msbuildProject": "../Library.TaskManagerApplication/Library.TaskManager.csproj"
+      "path": "../Library.TaskManager/Library.TaskManager.csproj",
+      "msbuildProject": "../Library.TaskManager/Library.TaskManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8404,8 +8412,8 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj": {
-              "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj"
+            "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManager\\Library.TaskManager.csproj": {
+              "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManager\\Library.TaskManager.csproj"
             }
           }
         }
