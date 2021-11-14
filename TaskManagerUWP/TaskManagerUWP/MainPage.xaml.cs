@@ -29,15 +29,15 @@ namespace TaskManagerUWP
         }
 
         private async void AddNew_Click(object sender, RoutedEventArgs e) {
-            await (DataContext as MainViewModel).AddTicket();
+            await (DataContext as MainViewModel).AddTMItem();
         }
 
         private async void Edit_Click(object sender, RoutedEventArgs e) {
-            await (DataContext as MainViewModel).EditTicket();
+            await (DataContext as MainViewModel).EditTMItem();
 		}
 
         private void Delete_Click(object sender, RoutedEventArgs e) {
-            (DataContext as MainViewModel).Remove();
+            (DataContext as MainViewModel).DeleteTMItem();
 		}
 
         private async void Details_Click(object sender, RoutedEventArgs e) {

@@ -1,4 +1,4 @@
-﻿using TaskManagerUWP.Library.Models;
+﻿using Library.TaskManagerUWP.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

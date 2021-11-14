@@ -4,14 +4,14 @@
     "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManagerUWP\\TaskManager.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj": {
+    "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj",
-        "projectName": "TaskManager.UWP.Library",
-        "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj",
+        "projectUniqueName": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj",
+        "projectName": "Library.TaskManager",
+        "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj",
         "packagesPath": "C:\\Users\\Conno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\obj\\",
+        "outputPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -44,10 +44,6 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -112,8 +108,8 @@
         "frameworks": {
           "uap10.0.17763": {
             "projectReferences": {
-              "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj": {
-                "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj"
+              "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj": {
+                "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj"
               }
             }
           }

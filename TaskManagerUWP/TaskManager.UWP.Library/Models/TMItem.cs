@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskManagerUWP.Library.Models {
+namespace Library.TaskManagerUWP.Models {
 	public class TMItem {
 		// Stores the current ID that all new items will be set to.
 		//private static int currentID = 1;

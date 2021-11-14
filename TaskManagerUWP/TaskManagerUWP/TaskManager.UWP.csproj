@@ -201,9 +201,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskManager.UWP.Library\TaskManager.UWP.Library.csproj">
-      <Project>{0a56f827-b22c-4a94-8062-dde0c8376a52}</Project>
-      <Name>TaskManager.UWP.Library</Name>
+    <ProjectReference Include="..\Library.TaskManagerApplication\Library.TaskManager.csproj">
+      <Project>{dd090d98-2390-4375-a667-cebdfd2618bb}</Project>
+      <Name>Library.TaskManager</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

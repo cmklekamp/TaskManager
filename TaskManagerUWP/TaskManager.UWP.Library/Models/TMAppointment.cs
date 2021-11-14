@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace TaskManagerUWP.Library.Models {
+namespace Library.TaskManagerUWP.Models {
 	public class TMAppointment : TMItem {
 		// Initial constructor.
 		public TMAppointment() : base() {

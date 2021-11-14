@@ -316,18 +316,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -825,18 +824,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -1335,18 +1333,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -1845,18 +1842,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -2354,18 +2350,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -2864,18 +2859,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -3373,18 +3367,17 @@
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     },
@@ -3883,18 +3876,17 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
-      "TaskManager.UWP.Library/1.0.0": {
+      "Library.TaskManager/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.17763",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12"
         },
         "compile": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TaskManager.UWP.Library.dll": {}
+          "bin/placeholder/Library.TaskManager.dll": {}
         }
       }
     }
@@ -8362,17 +8354,17 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
-    "TaskManager.UWP.Library/1.0.0": {
+    "Library.TaskManager/1.0.0": {
       "type": "project",
-      "path": "../TaskManager.UWP.Library/TaskManager.UWP.Library.csproj",
-      "msbuildProject": "../TaskManager.UWP.Library/TaskManager.UWP.Library.csproj"
+      "path": "../Library.TaskManagerApplication/Library.TaskManager.csproj",
+      "msbuildProject": "../Library.TaskManagerApplication/Library.TaskManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
+      "Library.TaskManager >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
-      "Newtonsoft.Json >= 13.0.1",
-      "TaskManager.UWP.Library >= 1.0.0"
+      "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
@@ -8412,8 +8404,8 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj": {
-              "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\TaskManager.UWP.Library\\TaskManager.UWP.Library.csproj"
+            "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj": {
+              "projectPath": "C:\\Users\\Conno\\source\\repos\\TaskManager\\TaskManagerUWP\\Library.TaskManagerApplication\\Library.TaskManager.csproj"
             }
           }
         }

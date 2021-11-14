@@ -1,5 +1,5 @@
 ﻿using TaskManagerUWP.Dialogs;
-using TaskManagerUWP.Library.Models;
+using Library.TaskManager.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -48,7 +48,6 @@ namespace TaskManagerUWP.ViewModels {
 
 		// These must be for saving eventually.
 		private string persistencePath;
-		private JsonSerializerSettings serializationSettings;
 
 		public MainViewModel() {
 			TMItems = new ObservableCollection<TMItem>();
@@ -69,13 +68,13 @@ namespace TaskManagerUWP.ViewModels {
 		}
 
 		// Add function, calls the "task or appointment" prompt and passes in the list to pass on.
-		public async Task AddTicket() {
+		public async Task AddTMItem() {
 			var diag = new TMPromptDialog(TMItems);
 			await diag.ShowAsync();
 		}
 
 		// Edit function, skips the prompting dialog because it already knows what kind of item the selection is.
-		public async Task EditTicket() {
+		public async Task EditTMItem() {
 			if (SelectedTMItem is TMTask) {
 				var diag = new TMTaskDialog(TMItems, SelectedTMItem as TMTask);
 				NotifyPropertyChanged("SelectedTMItem");
@@ -89,7 +88,7 @@ namespace TaskManagerUWP.ViewModels {
 		}
 
 		// Simply removes the item as long as it isn't already null (in which case exits without doing anything).
-		public void Remove() {
+		public void DeleteTMItem() {
 			if (SelectedTMItem == null) {
 				return;
 			}

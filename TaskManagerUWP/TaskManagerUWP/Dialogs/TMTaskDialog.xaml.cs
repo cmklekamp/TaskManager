@@ -1,5 +1,5 @@
 ﻿using System;
-using TaskManagerUWP.Library.Models;
+using Library.TaskManager.Models;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
 
