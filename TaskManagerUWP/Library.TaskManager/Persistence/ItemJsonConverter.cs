@@ -12,8 +12,8 @@ namespace Library.TaskManager.Persistence {
             if (jObject["Attendees"] != null || jObject["attendees"] != null) {
                 return new TMAppointment();
             }
-            else if (jObject["IsCompleted"] != null || jObject["isCompleted"] != null) {
-                return new TaskManager.Models.TMTask();
+            else if (jObject["Deadline"] != null || jObject["deadline"] != null) {
+                return new TMTask();
             }
             else {
                 return new TMItem();

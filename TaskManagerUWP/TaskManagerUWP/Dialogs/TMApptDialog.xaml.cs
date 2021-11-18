@@ -1,5 +1,8 @@
-﻿using Library.TaskManager.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Library.TaskManager.Communication;
+using Library.TaskManager.Models;
+using Newtonsoft.Json;
 using Windows.UI.Xaml.Controls;
 
 // The Content Dialog item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -22,13 +25,17 @@ namespace TaskManagerUWP.Dialogs {
 		// Adds the appointment (or, if it already exists, edits it by removing the original and adding the new one in its spot).
 		private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
 			var itemToEdit = DataContext as TMAppointment;
-			var i = TMItems.IndexOf(itemToEdit);
-			if (i >= 0) {
-				TMItems.Remove(itemToEdit);
-				TMItems.Insert(i, itemToEdit);
+
+			var apptString = new WebRequestHandler().Post("http://localhost:13791/Appointment/AddOrUpdate", itemToEdit).Result;
+			var apptServer = JsonConvert.DeserializeObject<TMAppointment>(apptString);
+			var appt = TMItems.FirstOrDefault(a => a is TMAppointment && a.Id == apptServer.Id);
+			if (appt == null) {
+				TMItems.Add(apptServer);
 			}
 			else {
-				TMItems.Add(itemToEdit);
+				var index = TMItems.IndexOf(appt);
+				TMItems.Remove(appt);
+				TMItems.Insert(index, appt);
 			}
 		}
 	}

@@ -1,4 +1,5 @@
 ﻿using TaskManagerUWP.Dialogs;
+using Library.TaskManager.Communication;
 using Library.TaskManager.Models;
 using Newtonsoft.Json;
 using System;
@@ -32,11 +33,21 @@ namespace TaskManagerUWP.ViewModels {
 						return TMItems;
 					}
 				} else {
-					filteredTMItems = new ObservableCollection<TMItem>(TMItems
-						.Where(s => s.Name.ToUpper().Contains(Query.ToUpper())
-						|| s.Description.ToUpper().Contains(Query.ToUpper())
-						|| (s as TMAppointment != null
-						&& (s as TMAppointment).Attendees.ToUpper().Contains(Query.ToUpper()))).ToList());
+					var filteredTaskString = new WebRequestHandler().Post("http://localhost:13791/Task/Query", Query).Result;
+					var filteredTasks = JsonConvert.DeserializeObject<ObservableCollection<TMTask>>(filteredTaskString);
+					filteredTMItems = new ObservableCollection<TMItem>();
+					if (filteredTasks != null) {
+						foreach(TMItem i in filteredTasks) {
+							filteredTMItems.Add(i);
+						}
+					}
+					var filteredApptString = new WebRequestHandler().Post("http://localhost:13791/Appointment/Query", Query).Result;
+					var filteredAppointments = JsonConvert.DeserializeObject<List<TMAppointment>>(filteredApptString);
+					if (filteredAppointments != null) {
+						foreach (TMAppointment i in filteredAppointments) {
+							filteredTMItems.Add(i);
+						}
+					}
 					return filteredTMItems;
 				}
 			}
@@ -71,6 +82,7 @@ namespace TaskManagerUWP.ViewModels {
 		public async Task AddTMItem() {
 			var diag = new TMPromptDialog(TMItems);
 			await diag.ShowAsync();
+			RefreshList();
 		}
 
 		// Edit function, skips the prompting dialog because it already knows what kind of item the selection is.
@@ -79,11 +91,13 @@ namespace TaskManagerUWP.ViewModels {
 				var diag = new TMTaskDialog(TMItems, SelectedTMItem as TMTask);
 				NotifyPropertyChanged("SelectedTMItem");
 				await diag.ShowAsync();
+				RefreshList();
 			}
 			else if (SelectedTMItem is TMAppointment) {
 				var diag = new TMApptDialog(TMItems, SelectedTMItem as TMAppointment);
 				NotifyPropertyChanged("SelectedTMItem");
 				await diag.ShowAsync();
+				RefreshList();
 			}
 		}
 
@@ -92,7 +106,20 @@ namespace TaskManagerUWP.ViewModels {
 			if (SelectedTMItem == null) {
 				return;
 			}
-			TMItems.Remove(SelectedTMItem);
+			if (SelectedTMItem is TMTask) {
+				var taskString =  new WebRequestHandler().Post("http://localhost:13791/Task/Delete", SelectedTMItem).Result;
+				var taskServer = JsonConvert.DeserializeObject<TMTask>(taskString);
+				var task = TMItems.FirstOrDefault(t => t is TMTask && t.Id == taskServer.Id);
+				TMItems.Remove(task);
+				RefreshList();
+			}
+			else if (SelectedTMItem is TMAppointment) {
+				var apptString = new WebRequestHandler().Post("http://localhost:13791/Appointment/Delete", SelectedTMItem).Result;
+				var apptServer = JsonConvert.DeserializeObject<TMAppointment>(apptString);
+				var appt = TMItems.FirstOrDefault(t => t is TMAppointment && t.Id == apptServer.Id);
+				TMItems.Remove(appt);
+				RefreshList();
+			}
 		}
 
 		// Calls a dialogue that shows the details of the item.

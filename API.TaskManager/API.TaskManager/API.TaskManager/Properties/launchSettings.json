@@ -8,13 +8,13 @@
     },
     "iisExpress": {
       "applicationUrl": "http://localhost:13791",
-      "sslPort": 44319
+      "sslPort": 0
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
     "IIS Express": {
-      "commandName": "IIS",
+      "commandName": "IISExpress",
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {

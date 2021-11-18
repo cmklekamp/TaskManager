@@ -202,7 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Library.TaskManager\Library.TaskManager.csproj">
-      <Project>{03d06dfa-0a9f-4f44-b516-7159e3a7c51d}</Project>
+      <Project>{e5084eaf-2cf1-4d57-91aa-59e47792dae8}</Project>
       <Name>Library.TaskManager</Name>
     </ProjectReference>
   </ItemGroup>

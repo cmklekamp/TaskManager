@@ -1,40 +1,54 @@
-﻿using TaskManagerUWP.Dialogs;
+﻿using System.Collections.Generic;
+using Library.TaskManager.Communication;
+using Library.TaskManager.Models;
+using Newtonsoft.Json;
 using TaskManagerUWP.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace TaskManagerUWP
-{
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainPage : Page {
+namespace TaskManagerUWP {
+	/// <summary>
+	/// An empty page that can be used on its own or navigated to within a Frame.
+	/// </summary>
+	public sealed partial class MainPage : Page {
         public MainPage() {
             this.InitializeComponent();
-            DataContext = new MainViewModel();
+            //DataContext = new MainViewModel();
+
+            //var handler = new WebRequestHandler();
+            //var items = JsonConvert.DeserializeObject<List<TMItem>>(handler.Get("http://localhost/TaskManagerAPI/Task/GetItem").Result);
+            //var context = DataContext as MainViewModel;
+
+            //items.ForEach(context.FilteredTMItems.Add);
+            var mainViewModel = new MainViewModel();
+            var taskString = new WebRequestHandler().Get("http://localhost:13791/Task").Result;
+            var tasks = JsonConvert.DeserializeObject<List<TMTask>>(taskString);
+            if(tasks != null) {
+                tasks.ForEach(t => mainViewModel.FilteredTMItems.Add(t));
+            }
+            var appointmentString = new WebRequestHandler().Get("http://localhost:13791/Appointment").Result;
+            var appointments = JsonConvert.DeserializeObject<List<TMAppointment>>(appointmentString);
+            if(appointments != null) {
+                appointments.ForEach(a => mainViewModel.FilteredTMItems.Add(a));
+            }
+
+            DataContext = mainViewModel;
+            (DataContext as MainViewModel).RefreshList();
         }
+
+        public event DependencyPropertyChangedEventHandler PropertyChanged;
 
         private async void AddNew_Click(object sender, RoutedEventArgs e) {
             await (DataContext as MainViewModel).AddTMItem();
+            (DataContext as MainViewModel).RefreshList();
         }
 
         private async void Edit_Click(object sender, RoutedEventArgs e) {
             await (DataContext as MainViewModel).EditTMItem();
-		}
+            (DataContext as MainViewModel).RefreshList();
+        }
 
         private void Delete_Click(object sender, RoutedEventArgs e) {
             (DataContext as MainViewModel).DeleteTMItem();

@@ -1,6 +1,9 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Library.TaskManager.Communication;
 using Library.TaskManager.Models;
-using System.Collections.Generic;
+using Newtonsoft.Json;
+using TaskManagerUWP.ViewModels;
 using Windows.UI.Xaml.Controls;
 
 
@@ -24,13 +27,16 @@ namespace TaskManagerUWP.Dialogs {
 		// Adds the task (or, if it already exists, edits it by removing the original and adding the new one in its spot).
 		private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args) {
 			var itemToEdit = DataContext as TMTask;
-			var i = TMItems.IndexOf(itemToEdit);
-			if (i >= 0) {
-				TMItems.Remove(itemToEdit);
-				TMItems.Insert(i, itemToEdit);
-			}
-			else {
-				TMItems.Add(itemToEdit);
+
+			var taskString = new WebRequestHandler().Post("http://localhost:13791/Task/AddOrUpdate", itemToEdit).Result;
+			var taskServer = JsonConvert.DeserializeObject<TMTask>(taskString);
+			var task = TMItems.FirstOrDefault(t => t is TMTask && t.Id == taskServer.Id);
+			if(task == null) {
+				TMItems.Add(taskServer);
+			} else {
+				var index = TMItems.IndexOf(task);
+				TMItems.Remove(task);
+				TMItems.Insert(index, task);
 			}
 		}
 	}

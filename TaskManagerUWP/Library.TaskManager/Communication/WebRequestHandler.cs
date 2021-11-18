@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.ToDo.Communication {
+namespace Library.TaskManager.Communication {
     public class WebRequestHandler {
         private HttpClient Client { get; }
         public WebRequestHandler() {

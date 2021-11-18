@@ -318,9 +318,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -827,9 +826,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -1337,9 +1335,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -1847,9 +1844,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -2356,9 +2352,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -2866,9 +2861,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -3375,9 +3369,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -3885,9 +3878,8 @@
       },
       "Library.TaskManager/1.0.0": {
         "type": "project",
-        "framework": "UAP,Version=v10.0.17763",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.12",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {

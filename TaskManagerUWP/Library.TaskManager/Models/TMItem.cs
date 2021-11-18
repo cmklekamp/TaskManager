@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Library.TaskManager.Persistence;
+using Newtonsoft.Json;
 
 namespace Library.TaskManager.Models {
+	[JsonConverter(typeof(ItemJsonConverter))]
 	public class TMItem {
 		public int Id { get; set; }
 		public int Priority { set; get; }

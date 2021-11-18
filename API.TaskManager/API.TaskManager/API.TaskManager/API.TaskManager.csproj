@@ -1,7 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,7 +16,7 @@
 
   <ItemGroup>
     <Reference Include="Library.TaskManager">
-      <HintPath>..\..\..\TaskManagerUWP\Library.TaskManager\bin\x86\Debug\Library.TaskManager.dll</HintPath>
+      <HintPath>..\..\..\TaskManagerUWP\Library.TaskManager\bin\Debug\netstandard2.0\Library.TaskManager.dll</HintPath>
     </Reference>
   </ItemGroup>
 

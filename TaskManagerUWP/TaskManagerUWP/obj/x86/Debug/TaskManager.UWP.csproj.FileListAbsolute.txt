@@ -132,5 +132,3 @@ C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\De
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\TaskManager.UWP.csproj.CopyComplete
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Library.TaskManager.dll
 C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Library.TaskManager.pdb
-C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\bin\x86\Debug\Library.TaskManager.pri
-C:\Users\Conno\source\repos\TaskManager\TaskManagerUWP\TaskManagerUWP\obj\x86\Debug\Library.TaskManager.pri.xml

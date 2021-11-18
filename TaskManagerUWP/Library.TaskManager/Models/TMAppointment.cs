@@ -1,8 +1,11 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Library.TaskManager.Persistence;
+using Newtonsoft.Json;
 
 namespace Library.TaskManager.Models {
+	[JsonConverter(typeof(ItemJsonConverter))]
 	public class TMAppointment : TMItem {
 		// Initial constructor.
 		public TMAppointment() : base() {
