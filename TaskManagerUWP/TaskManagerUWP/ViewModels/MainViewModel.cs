@@ -109,14 +109,14 @@ namespace TaskManagerUWP.ViewModels {
 			if (SelectedTMItem is TMTask) {
 				var taskString =  new WebRequestHandler().Post("http://localhost:13791/Task/Delete", SelectedTMItem).Result;
 				var taskServer = JsonConvert.DeserializeObject<TMTask>(taskString);
-				var task = TMItems.FirstOrDefault(t => t is TMTask && t.Id == taskServer.Id);
+				var task = TMItems.FirstOrDefault(t => t is TMTask && t._id == taskServer._id);
 				TMItems.Remove(task);
 				RefreshList();
 			}
 			else if (SelectedTMItem is TMAppointment) {
 				var apptString = new WebRequestHandler().Post("http://localhost:13791/Appointment/Delete", SelectedTMItem).Result;
 				var apptServer = JsonConvert.DeserializeObject<TMAppointment>(apptString);
-				var appt = TMItems.FirstOrDefault(t => t is TMAppointment && t.Id == apptServer.Id);
+				var appt = TMItems.FirstOrDefault(t => t is TMAppointment && t._id == apptServer._id);
 				TMItems.Remove(appt);
 				RefreshList();
 			}

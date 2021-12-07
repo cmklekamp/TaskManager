@@ -28,7 +28,7 @@ namespace TaskManagerUWP.Dialogs {
 
 			var apptString = new WebRequestHandler().Post("http://localhost:13791/Appointment/AddOrUpdate", itemToEdit).Result;
 			var apptServer = JsonConvert.DeserializeObject<TMAppointment>(apptString);
-			var appt = TMItems.FirstOrDefault(a => a is TMAppointment && a.Id == apptServer.Id);
+			var appt = TMItems.FirstOrDefault(a => a is TMAppointment && a._id == apptServer._id);
 			if (appt == null) {
 				TMItems.Add(apptServer);
 			}

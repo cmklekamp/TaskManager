@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Library.TaskManager.Persistence;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
 namespace Library.TaskManager.Models {
 	[JsonConverter(typeof(ItemJsonConverter))]
-	public class TMItem {
-		public int Id { get; set; }
+	public class TMItem : INotifyPropertyChanged {
+		[BsonId]
+		[BsonRepresentation(BsonType.ObjectId)]
+		public string _id { get; set; }
 		public int Priority { set; get; }
 		public string PriorityString {
 			get {
@@ -24,11 +25,38 @@ namespace Library.TaskManager.Models {
 				}
 			}
 		}
-		public string Name { get; set; }
-		public string Description { get; set; }
-		public string IsCompletedString { get; set; }
+		[BsonElement("name")]
+		private string name;
+		public event PropertyChangedEventHandler PropertyChanged;
+		[BsonIgnore]
+		public string Name {
+			get {
+				return name;
+			}
+			set {
+				name = value;
+				NotifyPropertyChanged();
+			}
+		}
+		[BsonElement("description")]
+		private string description;
+		[BsonIgnore]
+		public string Description { 
+			get {
+				return description;
+			}
+			set {
+				description = value;
+				NotifyPropertyChanged();
+			}
+		}
+		public virtual string IsCompletedString { get; set; }
 		public override string ToString() {
 			return $"[ITEM] {Name} - {Description}";
+		}
+
+		internal void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 	}
 }

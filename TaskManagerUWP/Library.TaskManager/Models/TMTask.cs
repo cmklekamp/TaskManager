@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Library.TaskManager.Persistence;
+using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
 namespace Library.TaskManager.Models {
@@ -13,7 +14,9 @@ namespace Library.TaskManager.Models {
 		}
 
 		// Variables that handle DateTime stuff.
+		[BsonIgnore]
 		private DateTimeOffset boundDate;
+		[BsonIgnore]
 		public DateTimeOffset BoundDate {
 			get {
 				return boundDate;
@@ -24,6 +27,7 @@ namespace Library.TaskManager.Models {
 				NotifyPropertyChanged("Deadline");
 			}
 		}
+		[BsonElement("deadline")]
 		public DateTime Deadline { get; set; }
 		// Event handler stuff.
 		public event PropertyChangedEventHandler PropertyChanged;

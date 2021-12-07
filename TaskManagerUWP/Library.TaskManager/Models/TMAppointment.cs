@@ -2,11 +2,12 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Library.TaskManager.Persistence;
+using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
 namespace Library.TaskManager.Models {
 	[JsonConverter(typeof(ItemJsonConverter))]
-	public class TMAppointment : TMItem {
+	public class TMAppointment : TMItem, INotifyPropertyChanged {
 		// Initial constructor.
 		public TMAppointment() : base() {
 			BoundDateStart = DateTime.Now;
@@ -14,8 +15,11 @@ namespace Library.TaskManager.Models {
 		}
 		// Variables that handle DateTime stuff.
 		// Starting time variables.
+		[BsonElement("Start")]
 		public DateTime Start { set; get; }
+		[BsonIgnore]
 		private DateTimeOffset boundDateStart;
+		[BsonIgnore]
 		public DateTimeOffset BoundDateStart {
 			get {
 				return boundDateStart;
@@ -27,8 +31,11 @@ namespace Library.TaskManager.Models {
 			}
 		}
 		// Stop time variables.
+		[BsonElement("Stop")]
 		public DateTime Stop { set; get; }
+		[BsonIgnore]
 		private DateTimeOffset boundDateStop;
+		[BsonIgnore]
 		public DateTimeOffset BoundDateStop {
 			get {
 				return boundDateStop;
@@ -45,6 +52,7 @@ namespace Library.TaskManager.Models {
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 		// Input string that stores the attendees of the appointment.
+		[BsonElement("Attendees")]
 		public string Attendees { set; get; }
 		// ToString override that formats the items being printed to the screen.
 		public override string ToString() {

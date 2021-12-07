@@ -30,7 +30,7 @@ namespace TaskManagerUWP.Dialogs {
 
 			var taskString = new WebRequestHandler().Post("http://localhost:13791/Task/AddOrUpdate", itemToEdit).Result;
 			var taskServer = JsonConvert.DeserializeObject<TMTask>(taskString);
-			var task = TMItems.FirstOrDefault(t => t is TMTask && t.Id == taskServer.Id);
+			var task = TMItems.FirstOrDefault(t => t is TMTask && t._id == taskServer._id);
 			if(task == null) {
 				TMItems.Add(taskServer);
 			} else {
