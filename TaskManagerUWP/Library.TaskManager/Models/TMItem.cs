@@ -10,7 +10,9 @@ namespace Library.TaskManager.Models {
 	public class TMItem : INotifyPropertyChanged {
 		[BsonId]
 		[BsonRepresentation(BsonType.ObjectId)]
-		public string _id { get; set; }
+		public string _id { 
+			get; set; 
+		}
 		public int Priority { set; get; }
 		public string PriorityString {
 			get {

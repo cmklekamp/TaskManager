@@ -17,7 +17,7 @@ namespace API.TaskManager.Persistence {
         public static Database Current {
             get {
                 if (instance == null) {
-                    var settings = MongoClientSettings.FromConnectionString("mongodb+srv://TMUser:<password>@taskmanagerapi.sdve1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+                    var settings = MongoClientSettings.FromConnectionString("mongodb+srv://TMUser:tmuser@taskmanagerapi.sdve1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
                     var client = new MongoClient(settings);
                     var _db = client.GetDatabase("test");
                     instance = new Database(_db);
@@ -56,8 +56,9 @@ namespace API.TaskManager.Persistence {
         public bool Delete(string type, string id) {
             if(type == "TMTask") {
                 try {
-                    var taskToRemove = Database.Current.TMTasks.FirstOrDefault(t => t._id == id);
-                    Database.Current.TMTasks.Remove(taskToRemove);
+                    IMongoCollection<BsonDocument> collection;
+                    collection = _database.GetCollection<BsonDocument>("tmtasks");
+                    collection.DeleteOne(Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(id)));
                 }
                 catch (Exception) {
                     return false;
@@ -66,8 +67,9 @@ namespace API.TaskManager.Persistence {
                 return true;
             } else if (type == "TMAppointment") {
                 try {
-                    var apptToRemove = Database.Current.TMAppointments.FirstOrDefault(a => a._id == id);
-                    Database.Current.TMAppointments.Remove(apptToRemove);
+                    IMongoCollection<BsonDocument> collection;
+                    collection = _database.GetCollection<BsonDocument>("tmappointments");
+                    collection.DeleteOne(Builders<BsonDocument>.Filter.Eq("_id", ObjectId.Parse(id)));
                 }
                 catch (Exception) {
                     return false;

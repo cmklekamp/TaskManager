@@ -9872,6 +9872,7 @@
     "UAP,Version=v10.0.17763": [
       "Library.TaskManager >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
+      "MongoDB.Driver >= 2.14.1",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
@@ -9925,6 +9926,10 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.12, )"
+          },
+          "MongoDB.Driver": {
+            "target": "Package",
+            "version": "[2.14.1, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

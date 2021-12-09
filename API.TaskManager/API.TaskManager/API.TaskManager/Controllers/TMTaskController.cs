@@ -31,14 +31,14 @@ namespace API.TaskManager.Controllers {
 			return task;
 		}
 
-		[HttpGet("Delete/{id}")]
-		public string Delete(string id) {
+		[HttpPost("Delete")]
+		public string Delete([FromBody] string id) {
 			Database.Current.Delete("TMTask", id);
 			return id;
 		}
 
 		[HttpPost("Query")]
-		public IList<TMTask> Search(QueryDTO query) {
+		public IEnumerable<TMTask> Search(string query) {
 			return Database.Current.TMTasks.Where(s => s.Name.ToUpper().Contains(query.ToUpper())
 						|| s.Description.ToUpper().Contains(query.ToUpper()));
 		}

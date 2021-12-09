@@ -29,14 +29,14 @@ namespace Api.ToDoApplication.Controllers {
             return appointment;
         }
 
-        [HttpGet("Delete/{id}")]
-        public string Delete(string id) {
+        [HttpPost("Delete")]
+        public string Delete([FromBody] string id) {
             Database.Current.Delete("TMAppointment", id);
             return id;
         }
 
 		[HttpPost("Query")]
-		public IList<TMAppointment> Search(QueryDTO query) {
+		public IEnumerable<TMAppointment> Search(string query) {
 			return Database.Current.TMAppointments.Where(s => s.Name.ToUpper().Contains(query.ToUpper())
 						|| s.Description.ToUpper().Contains(query.ToUpper())
 						|| (s as TMAppointment != null

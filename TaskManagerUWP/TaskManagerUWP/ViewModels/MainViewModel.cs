@@ -107,16 +107,16 @@ namespace TaskManagerUWP.ViewModels {
 				return;
 			}
 			if (SelectedTMItem is TMTask) {
-				var taskString =  new WebRequestHandler().Post("http://localhost:13791/Task/Delete", SelectedTMItem).Result;
-				var taskServer = JsonConvert.DeserializeObject<TMTask>(taskString);
-				var task = TMItems.FirstOrDefault(t => t is TMTask && t._id == taskServer._id);
+				var taskId =  new WebRequestHandler().Post("http://localhost:13791/Task/Delete", SelectedTMItem._id).Result;
+				// var taskServer = JsonConvert.DeserializeObject<TMTask>(taskString);
+				var task = TMItems.FirstOrDefault(t => t is TMTask && t._id == taskId);
 				TMItems.Remove(task);
 				RefreshList();
 			}
 			else if (SelectedTMItem is TMAppointment) {
-				var apptString = new WebRequestHandler().Post("http://localhost:13791/Appointment/Delete", SelectedTMItem).Result;
-				var apptServer = JsonConvert.DeserializeObject<TMAppointment>(apptString);
-				var appt = TMItems.FirstOrDefault(t => t is TMAppointment && t._id == apptServer._id);
+				var apptId = new WebRequestHandler().Post("http://localhost:13791/Appointment/Delete", SelectedTMItem._id).Result;
+				// var apptServer = JsonConvert.DeserializeObject<TMAppointment>(apptString);
+				var appt = TMItems.FirstOrDefault(t => t is TMAppointment && t._id == apptId);
 				TMItems.Remove(appt);
 				RefreshList();
 			}
